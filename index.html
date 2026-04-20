@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yonoi — Personal Profile</title>
+  <title>孙明杰 — Personal Profile</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-inner">
-      <span class="nav-logo">Yonoi</span>
+      <span class="nav-logo">孙明杰</span>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -31,12 +31,13 @@
     <div class="hero-bg"></div>
     <div class="hero-content">
       <div class="avatar-wrap">
-        <img class="avatar" src="assets/avatar.jpg" alt="Yonoi avatar" onerror="this.style.display='none'" />
+        <img class="avatar" src="assets/avatar.jpg" alt="孙明杰 avatar" onerror="this.style.display='none'" />
       </div>
-      <h1 class="hero-name">Hi, I'm <span class="gradient-text">Yonoi</span> 👋</h1>
-      <p class="hero-tagline">Tech Enthusiast · Builder · Lifelong Learner</p>
+      <h1 class="hero-name">Hi, I'm <span class="gradient-text">Mingjie Sun</span> 👋</h1>
+      <p class="hero-tagline">Security Researcher · Algorithm Engineer @ Kuaishou · RecSys & Agent</p>
       <div class="hero-links">
         <a class="btn-pill" href="https://github.com/Yonoi" target="_blank">GitHub</a>
+        <a class="btn-pill outline" href="https://scholar.google.com/citations?user=CeMfktAAAAAJ" target="_blank">Google Scholar</a>
         <a class="btn-pill outline" href="#contact">Contact Me</a>
       </div>
     </div>
@@ -48,10 +49,11 @@
     <div class="container">
       <h2 class="section-title">About Me</h2>
       <p class="about-text">
-        <!-- TODO: 替换为你的个人简介 -->
-        I'm a passionate technologist who loves building things that matter.
-        With a background in [your field], I enjoy tackling complex problems
-        and turning ideas into reality through code and creativity.
+        I'm Mingjie Sun (孙明杰), an Algorithm Engineer at Kuaishou Technology,
+        focusing on advertising recommendation models. My current research interests
+        include <strong>Generative Recommendation</strong> and <strong>Agent for RecSys</strong>.
+        Previously, I conducted research in cybersecurity, advised by Prof. Yong Liao
+        and Prof. Haiyong Xie at USTC.
       </p>
     </div>
   </section>
@@ -62,13 +64,22 @@
       <h2 class="section-title">Education</h2>
       <div class="timeline">
 
-        <!-- TODO: 替换为你的教育经历 -->
+        <!-- Education -->
         <div class="timeline-item">
           <div class="tl-dot"></div>
           <div class="tl-body">
-            <h3>Your University Name</h3>
-            <span class="tl-meta">B.S. in Computer Science · 2018 – 2022</span>
-            <p>Relevant coursework: Algorithms, Machine Learning, Distributed Systems.</p>
+            <h3>中国科学技术大学 (USTC)</h3>
+            <span class="tl-meta">硕士 · 网络安全 · 导师：廖勇教授、谢海永教授</span>
+            <p>从事网络安全领域研究，发表多篇学术论文（见 Google Scholar）。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3>西安电子科技大学 (XDU)</h3>
+            <span class="tl-meta">本科</span>
+            <p>完成本科学业，打下扎实的计算机与通信基础。</p>
           </div>
         </div>
 
@@ -82,22 +93,22 @@
       <h2 class="section-title">Experience</h2>
       <div class="timeline">
 
-        <!-- TODO: 替换为你的工作/实习经历 -->
+        <!-- Experience -->
         <div class="timeline-item">
           <div class="tl-dot"></div>
           <div class="tl-body">
-            <h3>Software Engineer — Company Name</h3>
-            <span class="tl-meta">Jan 2023 – Present</span>
-            <p>Description of your responsibilities and achievements.</p>
+            <h3>算法工程师 — 快手科技</h3>
+            <span class="tl-meta">2023 年至今</span>
+            <p>负责广告推荐模型的研发与优化，当前研究方向为生成式推荐（Generative Recommendation）与 Agent for RecSys，探索大模型与推荐系统的深度融合。</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="tl-dot"></div>
           <div class="tl-body">
-            <h3>Intern — Another Company</h3>
-            <span class="tl-meta">Jun 2022 – Dec 2022</span>
-            <p>What you worked on and what you learned.</p>
+            <h3>研究生研究员 — 中国科学技术大学</h3>
+            <span class="tl-meta">研究生阶段</span>
+            <p>在网络安全领域开展科研工作，师从廖勇教授和谢海永教授。</p>
           </div>
         </div>
 
@@ -111,35 +122,37 @@
       <h2 class="section-title">Projects</h2>
       <div class="card-grid">
 
-        <!-- TODO: 替换为你的项目 -->
+        <!-- Projects -->
         <div class="card">
-          <h3 class="card-title">Project Alpha</h3>
-          <p class="card-desc">A brief description of what this project does and the problem it solves.</p>
+          <h3 class="card-title">Generative Recommendation</h3>
+          <p class="card-desc">基于大语言模型的生成式推荐系统研究，探索 LLM 在广告推荐场景中的应用。</p>
           <div class="card-tags">
-            <span class="tag">Python</span>
-            <span class="tag">ML</span>
+            <span class="tag">LLM</span>
+            <span class="tag">RecSys</span>
+            <span class="tag">广告</span>
           </div>
-          <a class="card-link" href="#" target="_blank">View →</a>
+          <a class="card-link" href="https://scholar.google.com/citations?user=CeMfktAAAAAJ" target="_blank">Publications →</a>
         </div>
 
         <div class="card">
-          <h3 class="card-title">Project Beta</h3>
-          <p class="card-desc">Another project highlight. Focus on impact and technology used.</p>
+          <h3 class="card-title">Agent for RecSys</h3>
+          <p class="card-desc">研究以 Agent 框架驱动推荐系统决策，实现更智能的用户意图理解与内容分发。</p>
           <div class="card-tags">
-            <span class="tag">React</span>
-            <span class="tag">Node.js</span>
+            <span class="tag">Agent</span>
+            <span class="tag">LLM</span>
+            <span class="tag">推荐系统</span>
           </div>
-          <a class="card-link" href="#" target="_blank">View →</a>
+          <a class="card-link" href="https://scholar.google.com/citations?user=CeMfktAAAAAJ" target="_blank">Publications →</a>
         </div>
 
         <div class="card">
-          <h3 class="card-title">Project Gamma</h3>
-          <p class="card-desc">Open source contribution or personal tool you built.</p>
+          <h3 class="card-title">网络安全研究</h3>
+          <p class="card-desc">硕士阶段在 USTC 从事网络安全方向研究，发表多篇学术论文。</p>
           <div class="card-tags">
-            <span class="tag">Go</span>
-            <span class="tag">Docker</span>
+            <span class="tag">Network Security</span>
+            <span class="tag">USTC</span>
           </div>
-          <a class="card-link" href="#" target="_blank">View →</a>
+          <a class="card-link" href="https://scholar.google.com/citations?user=CeMfktAAAAAJ" target="_blank">Publications →</a>
         </div>
 
       </div>
@@ -153,32 +166,31 @@
       <div class="skills-grid">
 
         <div class="skill-group">
-          <h4>Languages</h4>
-          <!-- TODO: 替换为你的语言 -->
+          <h4>Research Areas</h4>
+          <div class="skill-tags">
+            <span class="tag">Recommendation Systems</span>
+            <span class="tag">Network Security</span>
+            <span class="tag">LLM</span>
+            <span class="tag">Generative AI</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Engineering</h4>
           <div class="skill-tags">
             <span class="tag">Python</span>
-            <span class="tag">Go</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">TypeScript</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">广告算法</span>
+            <span class="tag">大规模训练</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <h4>Frameworks & Tools</h4>
+          <h4>Tools & Infra</h4>
           <div class="skill-tags">
-            <span class="tag">React</span>
-            <span class="tag">Node.js</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Git</span>
             <span class="tag">Docker</span>
-            <span class="tag">Kubernetes</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4>Cloud & Infra</h4>
-          <div class="skill-tags">
-            <span class="tag">AWS</span>
-            <span class="tag">GCP</span>
-            <span class="tag">Terraform</span>
           </div>
         </div>
 
@@ -192,16 +204,16 @@
       <h2 class="section-title">Get In Touch</h2>
       <p class="contact-sub">I'm always open to interesting conversations and new opportunities.</p>
       <div class="contact-links">
-        <!-- TODO: 替换为你的联系方式 -->
-        <a class="btn-pill" href="mailto:your@email.com">Email Me</a>
+        <a class="btn-pill" href="mailto:mjsun@mail.ustc.edu.cn">mjsun@mail.ustc.edu.cn</a>
         <a class="btn-pill outline" href="https://github.com/Yonoi" target="_blank">GitHub</a>
-        <a class="btn-pill outline" href="https://linkedin.com/in/Yonoi" target="_blank">LinkedIn</a>
+        <a class="btn-pill outline" href="https://scholar.google.com/citations?user=CeMfktAAAAAJ" target="_blank">Google Scholar</a>
+        <a class="btn-pill outline" href="tel:+8615909202870">📞 159-0920-2870</a>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <p>Built with ❤️ by Yonoi · <a href="https://github.com/Yonoi/Yonoi.github.io">Source</a></p>
+    <p>Built with ❤️ by 孙明杰 · <a href="https://github.com/Yonoi/Yonoi.github.io">Source</a></p>
   </footer>
 
 </body>
