@@ -384,3 +384,8 @@ a { color: inherit; text-decoration: none; }
   color: #f97b85;
   border-color: rgba(246,79,89,0.3);
 }
+.pub-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
