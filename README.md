@@ -12,7 +12,7 @@ This repository is the **PUBLIC layer only**. It is linked from a private CV, so
 
 Allowed:
 - Career timeline: periods, role, research directions (no project names, no internal codenames)
-- Accepted / published papers: venue, year, author role, and a short abstract based on the public title
+- Accepted / published papers: venue, year, author role, a short abstract based on the public title, and public arXiv / PDF links
 - Education, research interests, public contact channels (email, phone / WeChat, GitHub, Google Scholar)
 
 Never publish here:
