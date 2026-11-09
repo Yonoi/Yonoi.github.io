@@ -1,227 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mingjie Sun — Personal Profile</title>
+  <title>孙明杰 Mingjie Sun — 广告算法工程师</title>
+  <meta name="description" content="孙明杰，快手科技广告算法工程师。研究兴趣：生成式推荐、语义 ID、LLM4Rec、强化学习与大规模召回。KDD / AAAI / CIKM / ICCV 论文作者。" />
+  <meta name="author" content="Mingjie Sun" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- ── Navigation ─────────────────────────────── -->
   <nav class="navbar">
     <div class="nav-inner">
-      <span class="nav-logo">Mingjie Sun</span>
+      <a class="nav-logo" href="#top">孙明杰 <span>Mingjie Sun</span></a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#experience">经历</a></li>
+        <li><a href="#publications">论文</a></li>
+        <li><a href="#about">关于</a></li>
+        <li><a href="#contact">联系</a></li>
       </ul>
+      <a class="nav-mail" href="mailto:mjsun@mail.ustc.edu.cn">联系我 ↗</a>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="avatar-wrap">
-        <img class="avatar" src="assets/avatar.jpg" alt="Mingjie Sun" onerror="this.style.display='none'" />
+  <!-- ── Hero ───────────────────────────────────── -->
+  <header class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="kicker">ADS ALGORITHM ENGINEER · KUAISHOU TECHNOLOGY</p>
+        <h1>孙明杰<span class="hero-en">Mingjie Sun</span></h1>
+        <p class="hero-role">快手科技 · 商业化 / 广告算法工程师</p>
+        <p class="hero-intro">
+          研究方向聚焦<strong>生成式推荐</strong>、<strong>语义 ID</strong> 与 <strong>LLM 在推荐系统中的应用</strong>。
+          工作脉络从大规模召回模型优化，逐步走向语义化表征与生成式推荐方法；此前在中国科学技术大学从事网络安全研究。
+        </p>
+        <div class="interest-tags">
+          <span>Generative Recommendation</span><span>Semantic ID</span><span>LLM4Rec</span><span>Reinforcement Learning</span>
+        </div>
+        <div class="hero-links">
+          <a class="btn primary" href="https://scholar.google.com/citations?user=CeMfktAAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a class="btn" href="https://github.com/Yonoi" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn ghost" href="mailto:mjsun@mail.ustc.edu.cn">✉ 邮件</a>
+        </div>
       </div>
-      <h1 class="hero-name">Hi, I'm <span class="gradient-text">Mingjie Sun</span> 👋</h1>
-      <p class="hero-tagline">Algorithm Engineer @ Kuaishou · RecSys & Agent</p>
-      <p class="hero-quote">"All models are wrong, but some are useful." <span class="hero-quote-author">— George E. P. Box</span></p>
-      <div class="hero-links">
-        <a class="btn-pill" href="https://github.com/Yonoi" target="_blank">GitHub</a>
-        <a class="btn-pill outline" href="https://scholar.google.com/citations?user=CeMfktAAAAAJ" target="_blank">Google Scholar</a>
-        <a class="btn-pill outline" href="#contact">Contact Me</a>
-      </div>
-    </div>
-    <div class="scroll-hint">↓</div>
-  </section>
-
-  <!-- About -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p class="about-text">
-        I'm Mingjie Sun (孙明杰), an Algorithm Engineer at Kuaishou Technology,
-        focusing on advertising recommendation models. My current research interests
-        include <strong>Generative Recommendation</strong> and <strong>Agent for RecSys</strong>.
-        Previously, I conducted research in cybersecurity, advised by
-        <a href="https://scholar.google.com/citations?hl=en&user=_wuoU1EAAAAJ" target="_blank" style="color:var(--g4)">Prof. Yong Liao</a>
-        and
-        <a href="https://sites.google.com/view/haiyongxie" target="_blank" style="color:var(--g4)">Prof. Haiyong Xie</a>
-        at USTC.
-      </p>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section class="section alt-bg" id="experience">
-    <div class="container">
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="tl-dot"></div>
-          <div class="tl-body">
-            <h3>Algorithm Engineer — Kuaishou Technology</h3>
-            <span class="tl-meta">2023 – Present</span>
-            <p>Working on advertising recommendation models. Current research focuses on Generative Recommendation and Agent for RecSys, exploring the integration of large language models with recommendation systems.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="tl-dot"></div>
-          <div class="tl-body">
-            <h3>University of Science and Technology of China (USTC) — M.S.</h3>
-            <span class="tl-meta">Cybersecurity · 2020 – 2023 · Advised by <a href="https://scholar.google.com/citations?hl=en&user=_wuoU1EAAAAJ" target="_blank" style="color:var(--g4)">Prof. Yong Liao</a> &amp; <a href="https://sites.google.com/view/haiyongxie" target="_blank" style="color:var(--g4)">Prof. Haiyong Xie</a></span>
-            <p>Conducted research in network security and published multiple academic papers (see Google Scholar).</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="tl-dot"></div>
-          <div class="tl-body">
-            <h3>Xidian University (XDU) — B.S.</h3>
-            <span class="tl-meta">Computer Science & Communication · 2016 – 2020</span>
-            <p>Built a solid foundation in computer science and communications engineering.</p>
-          </div>
-        </div>
-
+      <div class="hero-photo">
+        <img src="assets/avatar.jpg" alt="孙明杰 Mingjie Sun" onerror="this.parentElement.style.display='none'" />
+        <div class="photo-caption">Mingjie Sun · Kuaishou Technology</div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- Publications -->
-  <section class="section alt-bg" id="publications">
-    <div class="container">
-      <h2 class="section-title">Publications</h2>
-      <div class="pub-list">
+  <main>
 
-        <div class="pub-item">
-          <div class="pub-year">2026</div>
-          <div class="pub-body">
-            <p class="pub-title">Align<sup>3</sup>GR: Unified Multi-Level Alignment for LLM-based Generative Recommendation</p>
-            <p class="pub-authors">W Ye, <strong>M Sun<sup>*</sup></strong>, S Chen, W Wu, P Jiang</p>
-            <span class="pub-venue">AAAI 2026</span> <span class="pub-venue oral">Oral</span>
-          </div>
+    <!-- ── Experience ───────────────────────────── -->
+    <section class="section" id="experience">
+      <div class="container narrow">
+        <div class="section-head">
+          <span class="eyebrow">EXPERIENCE</span>
+          <h2>经历</h2>
+          <p>从召回链路优化，到语义化表征，再到生成式推荐方法，研究主线持续演进。</p>
         </div>
 
-        <div class="pub-item">
-          <div class="pub-year">2026</div>
-          <div class="pub-body">
-            <p class="pub-title">Generative Recommendation for Large-Scale Advertising</p>
-            <p class="pub-authors">B Xue, D Liu, L Wang, <strong>M Sun<sup>*</sup></strong>, et al.</p>
-            <span class="pub-venue">KDD 2026</span>
-          </div>
-        </div>
+        <div class="timeline">
 
-        <div class="pub-item">
-          <div class="pub-year">2025</div>
-          <div class="pub-body">
-            <p class="pub-title">DAS: Dual-Aligned Semantic IDs Empowered Industrial Recommender System</p>
-            <p class="pub-authors">W Ye, <strong>M Sun<sup>*</sup></strong>, S Shi, P Wang, W Wu, P Jiang</p>
-            <span class="pub-venue">CIKM 2025</span> <span class="pub-venue oral">Oral</span>
-          </div>
-        </div>
+          <article class="tl-item current">
+            <div class="tl-marker"></div>
+            <div class="tl-period">2025.07 – 至今</div>
+            <div class="tl-content">
+              <h3>生成式推荐与强化学习</h3>
+              <p class="tl-place">快手科技 · 广告算法工程师</p>
+              <p class="tl-desc">
+                聚焦生成式推荐模型的建模能力与偏好对齐，研究强化学习方法与模型规模化。
+                从承担初版模型与强化学习链路建设，到独立负责模型规模化方向的方案设计与落地；
+                同时关注研发流程标准化与团队工具建设。
+              </p>
+              <div class="tag-row"><span>生成式推荐</span><span>强化学习</span><span>模型 Scaling</span></div>
+            </div>
+          </article>
 
-        <div class="pub-item">
-          <div class="pub-year">2025</div>
-          <div class="pub-body">
-            <p class="pub-title">SweetTok: Semantic-Aware Spatial-Temporal Tokenizer for Compact Video Discretization</p>
-            <p class="pub-authors">Z Tan, B Xue, J Jia, J Wang, W Ye, S Shi, <strong>M Sun</strong>, et al.</p>
-            <span class="pub-venue">ICCV 2025</span>
-          </div>
-        </div>
+          <article class="tl-item">
+            <div class="tl-marker"></div>
+            <div class="tl-period">2024.07 – 2025.07</div>
+            <div class="tl-content">
+              <h3>语义化表征与生成式召回</h3>
+              <p class="tl-place">快手科技 · 广告算法工程师</p>
+              <p class="tl-desc">
+                研究将多模态语义信息引入推荐系统的可学习方法，探索离散语义标识、语义—协同对齐与
+                人货场图关系建模，并推动生成式检索范式在推荐链路中的验证与应用。
+                此阶段逐步承担独立项目负责人职责。
+              </p>
+              <div class="tag-row"><span>语义 ID</span><span>多模态</span><span>LLM4Rec</span><span>偏好对齐</span></div>
+            </div>
+          </article>
 
-        <div class="pub-item">
-          <div class="pub-year">2022</div>
-          <div class="pub-body">
-            <p class="pub-title">Spatial-Temporal Attention Network for Crime Prediction with Adaptive Graph Learning</p>
-            <p class="pub-authors"><strong>M Sun</strong>, P Zhou, H Tian, Y Liao, H Xie</p>
-            <span class="pub-venue">ICANN 2022</span>
-          </div>
-        </div>
+          <article class="tl-item">
+            <div class="tl-marker"></div>
+            <div class="tl-period">2023.07 – 2024.07</div>
+            <div class="tl-content">
+              <h3>大规模召回模型优化</h3>
+              <p class="tl-place">快手科技 · 广告算法工程师</p>
+              <p class="tl-desc">
+                围绕广告推荐中的大规模召回链路，参与检索树结构与在线召回推断的建设，
+                随后独立承担多目标建模、训练样本治理与召回链路优化；
+                同时关注候选多样性、广告生态与系统效率。
+              </p>
+              <div class="tag-row"><span>推荐召回</span><span>表征学习</span><span>数据流</span></div>
+            </div>
+          </article>
 
-        <div class="pub-item">
-          <div class="pub-year">2020</div>
-          <div class="pub-body">
-            <p class="pub-title">Identification of Critical Nodes in Dynamic Systems Based on Graph Convolutional Networks</p>
-            <p class="pub-authors"><strong>M Sun</strong>, Y Jiang, Y Wang, H Xie, Z Wang</p>
-            <span class="pub-venue">ICUS 2020</span>
-          </div>
-        </div>
+          <article class="tl-item edu">
+            <div class="tl-marker"></div>
+            <div class="tl-period">2020 – 2023</div>
+            <div class="tl-content">
+              <h3>中国科学技术大学 · 硕士</h3>
+              <p class="tl-place">网络安全 · 导师：Yong Liao 教授、Haiyong Xie 教授</p>
+              <p class="tl-desc">从事网络安全与图学习相关研究。</p>
+            </div>
+          </article>
 
+          <article class="tl-item edu">
+            <div class="tl-marker"></div>
+            <div class="tl-period">2016 – 2020</div>
+            <div class="tl-content">
+              <h3>西安电子科技大学 · 本科</h3>
+              <p class="tl-place">计算机与通信</p>
+            </div>
+          </article>
+
+        </div>
       </div>
-      <p class="pub-note"><sup>*</sup> Equal contribution (co-first author)</p>
-      <div style="text-align:center;margin-top:2rem">
-        <a class="btn-pill outline" href="https://scholar.google.com/citations?user=CeMfktAAAAAJ" target="_blank">Full list on Google Scholar →</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills -->
-  <section class="section" id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-
-        <div class="skill-group">
-          <h4>Research Areas</h4>
-          <div class="skill-tags">
-            <span class="tag">Recommendation Systems</span>
-            <span class="tag">Network Security</span>
-            <span class="tag">LLM</span>
-            <span class="tag">Generative AI</span>
-          </div>
+    <!-- ── Publications ─────────────────────────── -->
+    <section class="section alt" id="publications">
+      <div class="container narrow">
+        <div class="section-head">
+          <span class="eyebrow">PUBLICATIONS</span>
+          <h2>论文</h2>
+          <p>以下为已发表 / 已接收论文及近期预印本，按时间倒序；除标注外均为共同一作，完整列表见 Google Scholar。</p>
         </div>
 
-        <div class="skill-group">
-          <h4>Engineering</h4>
-          <div class="skill-tags">
-            <span class="tag">Python</span>
-            <span class="tag">PyTorch</span>
-            <span class="tag">Ads Algorithm</span>
-            <span class="tag">Large-scale Training</span>
-          </div>
+        <div class="pub-list">
+
+          <article class="pub-item">
+            <div class="pub-side"><span class="venue">WSDM 2027</span><span class="role">已接收</span></div>
+            <div class="pub-body">
+              <h3><span class="pub-key">BRIDGE</span> — Bridging the Semantic Quantization Gap for Generative Recommendation</h3>
+              <p class="pub-authors">Y Xiao, <strong>M Sun</strong>, P Wang, W Wu, +1 <span class="co-first">共同一作</span></p>
+              <p class="pub-abstract">利用语义量化过程中被丢弃的 item 语义信息改善生成式推荐检索，在公开基准与线上广告实验中验证有效性。</p>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <div class="pub-side"><span class="venue">arXiv</span><span class="role">预印本 · 2026</span></div>
+            <div class="pub-body">
+              <h3><span class="pub-key">GR4AD-X</span> — Towards Reliable, Scalable, and Value-Aligned Generative Recommendation for Large-Scale Advertising</h3>
+              <p class="pub-authors">Y Xiao, Y Sheng, L Wang, <strong>M Sun</strong>, +6 <span class="co-first">共同一作</span></p>
+              <p class="pub-abstract">面向大规模广告场景，研究生成式推荐在商业价值对齐、可靠性与实时吞吐约束之间的平衡。</p>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <div class="pub-side"><span class="venue">WSDM 2027</span><span class="role">已接收</span></div>
+            <div class="pub-body">
+              <h3><span class="pub-key">TAGR</span> — Temporally Adaptive Generative Recommendation for Industrial Live-Streaming Advertising</h3>
+              <p class="pub-authors">W Ye, G Liu, C Wang, W Luo, +6 <span class="co-author">合作作者</span></p>
+              <p class="pub-abstract">面向直播广告的时序自适应生成式推荐：直播语义-协同 ID 周期性刷新、多粒度意图建模、间歇式在线偏好优化。</p>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <div class="pub-side"><span class="venue">arXiv</span><span class="role">预印本 · 2026</span></div>
+            <div class="pub-body">
+              <h3>From a Static Multi-Level Small Semantic Codebook to a Dynamic Single-Level Large Semantic Codebook for Generative Recommendation</h3>
+              <p class="pub-authors">T Xie, X Ku, <strong>M Sun</strong>, Y Sha, +7 <span class="co-first">共同一作</span></p>
+              <p class="pub-abstract">用单层大语义码本替代多级残差量化，配合曝光感知的动态更新机制，降低自回归解码开销并提升码本时效性。</p>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <div class="pub-side"><span class="venue">KDD 2026</span><span class="badge oral">Oral</span></div>
+            <div class="pub-body">
+              <h3><span class="pub-key">GR4AD</span> — Generative Recommendation for Large-Scale Advertising</h3>
+              <p class="pub-authors">B Xue, D Liu, L Wang, <strong>M Sun</strong>, +26 <span class="co-first">共同一作</span></p>
+              <p class="pub-abstract">面向大规模广告场景的生成式推荐系统，在满足实时 serving 约束下提升广告收入，已部署于服务 4 亿+ 用户的平台。</p>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <div class="pub-side"><span class="venue">AAAI 2026</span><span class="badge oral">Oral</span></div>
+            <div class="pub-body">
+              <h3><span class="pub-key">Align<sup>3</sup>GR</span> — Unified Multi-Level Alignment for LLM-based Generative Recommendation</h3>
+              <p class="pub-authors">W Ye, <strong>M Sun</strong>, S Chen, W Wu, P Jiang <span class="co-first">共同一作</span></p>
+              <p class="pub-abstract">统一 token 级、行为建模级与偏好级三层对齐，结合双重分词、双向语义对齐与渐进式 DPO，将 LLM 适配为推荐模型。</p>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <div class="pub-side"><span class="venue">CIKM 2025</span><span class="badge oral">Oral</span></div>
+            <div class="pub-body">
+              <h3><span class="pub-key">DAS</span> — Dual-Aligned Semantic IDs Empowered Industrial Recommender System</h3>
+              <p class="pub-authors">W Ye, <strong>M Sun</strong>, S Shi, P Wang, +2 <span class="co-first">共同一作</span></p>
+              <p class="pub-abstract">提出一阶段双对齐语义 ID，联合优化量化与对齐以避免两阶段方法的信息损失，已在多个广告场景部署。</p>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <div class="pub-side"><span class="venue">ICCV 2025</span></div>
+            <div class="pub-body">
+              <h3><span class="pub-key">SweetTok</span> — Semantic-Aware Spatial-Temporal Tokenizer for Compact Video Discretization</h3>
+              <p class="pub-authors">Z Tan, B Xue, J Jia, J Wang, W Ye, S Shi, <strong>M Sun</strong>, +6 <span class="co-first">共同一作</span></p>
+              <p class="pub-abstract">通过解耦查询自编码器与运动增强语言码本，分别压缩视频的空间与时间信息，实现紧凑且语义化的视频离散化。</p>
+            </div>
+          </article>
+
         </div>
 
-        <div class="skill-group">
-          <h4>Tools & Infra</h4>
-          <div class="skill-tags">
-            <span class="tag">Linux</span>
-            <span class="tag">Git</span>
-            <span class="tag">Docker</span>
+        <div class="pub-more">
+          <a class="btn" href="https://scholar.google.com/citations?user=CeMfktAAAAAJ" target="_blank" rel="noopener">完整列表 · Google Scholar ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── About ────────────────────────────────── -->
+    <section class="section" id="about">
+      <div class="container narrow">
+        <div class="section-head">
+          <span class="eyebrow">ABOUT</span>
+          <h2>关于</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-block">
+            <h3>研究兴趣</h3>
+            <div class="chip-row">
+              <span>生成式推荐</span><span>语义 ID / Tokenization</span><span>LLM4Rec</span>
+              <span>强化学习与偏好对齐</span><span>大规模召回</span><span>图学习</span>
+            </div>
+          </div>
+          <div class="about-block">
+            <h3>技术栈</h3>
+            <div class="chip-row">
+              <span>Python</span><span>PyTorch</span><span>大规模模型训练</span>
+              <span>在线推理</span><span>Linux</span><span>Git</span><span>Docker</span>
+            </div>
+          </div>
+          <div class="about-block full">
+            <h3>教育背景</h3>
+            <p>中国科学技术大学（USTC）· 硕士 · 网络安全，2020 – 2023</p>
+            <p>西安电子科技大学（XDU）· 本科 · 计算机与通信，2016 – 2020</p>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section class="section alt-bg" id="contact">
-    <div class="container contact-center">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="contact-sub">I'm always open to interesting conversations and new opportunities.</p>
-      <div class="contact-links">
-        <a class="btn-pill" href="mailto:mjsun@mail.ustc.edu.cn">mjsun@mail.ustc.edu.cn</a>
-        <a class="btn-pill outline" href="https://github.com/Yonoi" target="_blank">GitHub</a>
-        <a class="btn-pill outline" href="https://scholar.google.com/citations?user=CeMfktAAAAAJ" target="_blank">Google Scholar</a>
-        <a class="btn-pill outline" href="tel:+8615909202870">📞 159-0920-2870</a>
+    <!-- ── Contact ──────────────────────────────── -->
+    <section class="section contact-section" id="contact">
+      <div class="container narrow contact-inner">
+        <span class="eyebrow">CONTACT</span>
+        <h2>联系</h2>
+        <p>欢迎就推荐系统、生成式推荐与相关研究交流。</p>
+        <div class="contact-links">
+          <a class="btn primary" href="mailto:mjsun@mail.ustc.edu.cn">mjsun@mail.ustc.edu.cn</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=CeMfktAAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a class="btn ghost" href="https://github.com/Yonoi" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <footer class="footer">
-    <p>Built with ❤️ by Mingjie Sun · <a href="https://github.com/Yonoi/Yonoi.github.io">Source</a></p>
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Mingjie Sun · 本页仅展示公开信息</span>
+      <a href="https://github.com/Yonoi/Yonoi.github.io" target="_blank" rel="noopener">Source ↗</a>
+    </div>
   </footer>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
